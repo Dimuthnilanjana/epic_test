@@ -3,92 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eleganze Cars</title>
+    <title>Responsive Footer and Contact Us</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        body, html {
-            height: 100%;
-            margin: 0;
-            font-family: Arial, sans-serif;
+        body {
+            background-color: #000;
+            color: #fff;
         }
-        .bg-img {
-            background-image: url('HEROO.png'); /* Update the path to your image */
-            height: 100%;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
+        .footer, .contact-us {
+            background-color: #000;
+            color: #fff;
+            padding: 40px 0;
         }
-        .overlay {
-            background: rgba(0, 0, 0, 0.6);
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-align: center;
+        .footer a, .contact-us a {
+            color: #fff;
         }
-        nav.navbar {
-            width: 100%;
+        .footer a:hover, .contact-us a:hover {
+            text-decoration: none;
         }
-        .navbar-nav .nav-item .nav-link {
-            color: white !important;
+        .subscribe input[type="email"] {
+            background-color: #333;
+            border: none;
+            color: #fff;
+            padding: 10px;
+            width: 80%;
         }
-        .content h1 {
-            font-size: 3em;
-            margin-bottom: 20px;
-            font-weight: bold;
+        .subscribe button {
+            background-color: #666;
+            border: none;
+            color: #fff;
+            padding: 10px 20px;
         }
-        .content h2 {
-            font-size: 2em;
-            margin-bottom: 20px;
+        .contact-us {
+            padding: 60px 0;
         }
-        .btn-custom {
+        .contact-us .form-control {
+            background-color: #444;
+            border: none;
+            color: #fff;
+        }
+        .contact-us .btn-primary {
             background-color: #fff;
             color: #000;
-            padding: 10px 20px;
-            font-size: 1.2em;
             border: none;
-            border-radius: 5px;
+            padding: 10px 20px;
+            font-weight: bold;
+        }
+        .contact-us img {
+            max-width: 100%;
+            border-radius: 10px;
         }
     </style>
 </head>
 <body>
-    <div class="bg-img">
-        <div class="overlay">
-            <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-dark">
-                    <a class="navbar-brand" href="#">Eleganze Cars</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">About Us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Products</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contact Us</a>
-                            </li>
-                        </ul>
+
+<!-- Contact Us Section -->
+<section class="contact-us">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="https://via.placeholder.com/500x500" alt="Car Image">
+            </div>
+            <div class="col-md-6">
+                <h2>CONTACT US</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control" placeholder="First Name">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control" placeholder="Second Name">
+                        </div>
                     </div>
-                </nav>
-                <div class="content">
-                    <h1>SETTING OFF IN A TOP FORM</h1>
-                    <h2>All new Benz Youth Series</h2>
-                    <a href="#" class="btn btn-custom">Learn More</a>
-                </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Email">
+                    </div>
+                    <button type="submit" class="btn btn-primary">SEND A EMAIL</button>
+                </form>
             </div>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <!-- Office Information -->
+            <div class="col-md-3">
+                <h5>OFFICE</h5>
+                <p>234/A, Main Street,<br>Berlin, Germany.</p>
+                <p><a href="http://www.benz-global.com" target="_blank">www.benz-global.com</a></p>
+                <p>+123 454 4567</p>
+            </div>
+            <!-- Links -->
+            <div class="col-md-3">
+                <h5>LINKS</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">PRODUCTS</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                </ul>
+            </div>
+            <!-- Social Media -->
+            <div class="col-md-3">
+                <h5>SOCIALS</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Whatsapp</a></li>
+                </ul>
+            </div>
+            <!-- Newsletter Subscription -->
+            <div class="col-md-3 subscribe">
+                <h5>SUBSCRIBE OUR NEWS</h5>
+                <form>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Enter email">
+                    </div>
+                    <button type="submit" class="btn btn-primary">SUBSCRIBE NOW</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 </html>
