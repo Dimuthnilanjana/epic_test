@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .bg {
+            background-image: url('regimg.png'); /* Make sure this matches the actual file name */
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            width: 100%;
+            z-index: -1;
+        }
+        .signup-container {
+            background: rgba(255, 255, 255, 0.07);
+            border-radius: 30px;
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            width: 100%;
+            max-width: 662px;
+            margin: auto;
+        }
+        .signup-title {
+            color: white;
+            font-size: 32px;
+            font-family: Arial;
+            font-weight: 700;
+            text-align: left;
+            margin-bottom: 12px;
+        }
+        .form-control {
+            background: rgba(255, 255, 255, 0.3);
+            border: none;
+            color: white;
+            font-size: 18px;
+        }
+        .form-control::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+        .btn-primary {
+            background-color: #000;
+            border: none;
+            border-radius: 10px;
+            width: 100%;
+        }
+        .social-btn {
+            background: none;
+            border: 1px solid white;
+            color: white;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .social-btn i {
+            margin-right: 10px;
+        }
+        .divider {
+            color: white;
+            margin: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+        .divider::before, .divider::after {
+            content: "";
+            background: white;
+            height: 1px;
+            width: 40%;
+            position: absolute;
+            top: 50%;
+        }
+        .divider::before {
+            left: 0;
+        }
+        .divider::after {
+            right: 0;
+        }
+        .form-check-label {
+            color: white;
+        }
+        .footer-text, .register {
+            color: white;
+            text-align: center; /* Ensure center alignment */
+            display: block;
+        }
+        .register {
+            text-align: center;
+        }
+        @media (min-width: 992px) {
+            .signup-container {
+                position: absolute;
+                top: 50%;
+                left: 60%;
+                transform: translate(-50%, -50%);
+            }
+            .social-buttons .social-btn {
+                width: 49%;
+            }
+            .social-buttons .social-btn + .social-btn {
+                margin-left: 2%;
+            }
+        }
+        .form-label {
+            color: white;
+            margin-bottom: 5px;
+            font-size: 16px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg"></div>
+    <div class="container d-flex align-items-center justify-content-center" style="height: 100vh;">
+        <div class="signup-container">
+            <div class="signup-title">Sign Up</div>
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="firstName" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="lastName" class="form-label">Second Name</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="Second Name">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Email">
+                </div>
+                <div class="form-group mt-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password">
+                </div>
+                <div class="form-group mt-3">
+                    <label for="confirmPassword" class="form-label">Re-enter Password</label>
+                    <input type="password" class="form-control" id="confirmPassword" placeholder="Re-enter Password">
+                </div>
+                <div class="form-check mt-3">
+                    <input type="checkbox" class="form-check-input" id="terms">
+                    <label class="form-check-label" for="terms">I've read and agree with Terms of Service and our Privacy policy</label>
+                </div>
+                <button type="submit" class="btn btn-primary mt-4">Register Now</button>
+            </form>
+            <div class="divider">OR</div>
+            <div class="social-buttons d-flex flex-column flex-md-row justify-content-between">
+                <button class="btn social-btn mt-2"><i class="fab fa-google"></i>Register with Google</button>
+                <button class="btn social-btn mt-2"><i class="fab fa-apple"></i>Register with Apple</button>
+            </div>
+            <div class="footer-text mt-3">Already have an account? <a href="#" class="text-white"><u>Sign In</u></a></div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
