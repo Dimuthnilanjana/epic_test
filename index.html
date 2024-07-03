@@ -130,7 +130,7 @@
                 <button class="btn social-btn mt-4"><i class="fab fa-apple"></i>Login with Apple</button>
             </div>
             <div class="divider">OR</div>
-            <form>
+            <form onsubmit="return false;">
                 <div class="form-group">
                     <input type="text" class="form-control" id="username" placeholder="User Name">
                 </div>
@@ -142,9 +142,9 @@
                     <label class="form-check-label" for="rememberMe">Remember me</label>
                     <a href="#" class="forgot-password">Forgot Password?</a>
                 </div>
-                <button type="submit" class="btn btn-primary mt-4">Login to Your Account</button>
+                <button type="submit" class="btn btn-primary mt-4" onclick="location.href='register.html'">Login to Your Account</button>
             </form>
-            <div class="register mt-3">Not a member yet? <a href="#" class="text-white"><u>Register Now</u></a></div>
+            <div class="register mt-3">Not a member yet? <a href="register.html" class="text-white"><u>Register Now</u></a></div>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
