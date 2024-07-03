@@ -1,0 +1,124 @@
+.body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: black;
+}
+
+.navbar-brand,
+.nav-link {
+    color: #fff !important;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.hero {
+    background: url('img/HEROO.png') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+    padding: 0 20px;
+    opacity: 0; 
+    animation: fadeIn 2s ease-in-out forwards; 
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+
+.hero .btn {
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+    transition: transform 0.3s ease; 
+}
+
+.hero .btn:hover {
+    transform: scale(1.1); 
+}
+
+.hero .highlight {
+    font-weight: bold;
+    font-size: 2rem; 
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .hero .highlight {
+        font-size: 1.5rem; 
+    }
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1; 
+    }
+}
+.product-options {
+    display: flex;
+    padding: 40px 0;
+    background-color: black; /* Example background color */
+}
+
+.product-item {
+    background-color:black;
+    
+    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    
+    margin-bottom: 10px;
+}
+
+.product-item p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .product-item {
+        margin-bottom: 20px;
+    }
+}
